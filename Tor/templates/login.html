@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/sss/commons.css">
+</head>
+<body>
+<h1> login</h1>
+{#{{ k1 }}#}
+{#{{ k2 }}#}
+{##}
+{#取列表#}
+{#取单独一个值#}
+{#{{ k2[0] }}#}
+{##}
+{#for循环 列表#}
+{#<ul>#}
+{#    {% for item in k2 %}#}
+{#    <li>{{ item }}</li>#}
+{#    {% end %}#}
+{# </ul>#}
+{#3、取字典#}
+{#{{ k3 }}#}
+{#    {{ k3['name'] }}#}
+{#    {{ k3.get('name') }}#}
+{##}
+{#for循环 字典 -- k3.items() 要执行字典的函数#}
+{#<ul>#}
+{#    {% for k,v in k3.items() %}#}
+{#    <li>{{ k }} - {{ v }}</li>#}
+{#    {% end %}#}
+{# </ul>#}
+
+
+<h2>{{ tab() }} -- {% module custom(123) %} </h2>
+<form method="post" action="/login">
+    <input type="text" name="user">
+    <input type="submit" value="提交">
+
+</form>
+</body>
+</html>
